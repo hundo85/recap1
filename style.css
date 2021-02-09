@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  background-color: #f2f2f2;
+  height: 100vh;
+  width: 100vw;
+}
+
+#divs {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+#divs .p1, #divs .p2 {
+  max-width: 500px;
+  background-color: white;
+  border: 2px solid #00a99d;
+  border-radius: 20px;
+}
+
+#divs .p1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  min-height: 500px;
+  margin: 10px;
+}
+
+#divs .p2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 500px;
+  width: 500px;
+}
+
+#p1-btn, #p2-btn {
+  position: fixed;
+  min-width: 60px;
+  min-height: 40px;
+  background-color: cornflowerblue;
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+#p1-btn {
+  top: 0;
+  left: 0;
+}
+
+#p2-btn {
+  top: 0;
+  left: 80px;
+}
+
+@media only screen and (max-width: 1010px) {
+  #divs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
